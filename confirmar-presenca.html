@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Presença | Rafaella e Gabriel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="inner-page">
+    <header class="page-header">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="logo">
+            <h1>Rafaella e Gabriel</h1>
+        </div>
+    </header>
+
+    <nav class="page-nav">
+        <a href="index.html">Início</a>
+        <a href="confirmar-presenca.html">Confirmar Presença</a>
+        <a href="presentes.html">Lista de Presentes</a>
+    </nav>
+
+    <main>
+        <section class="rsvp-hero">
+            <p>Confirmação de Presença</p>
+            <h2>Vamos amar ter você com a gente</h2>
+            <span>Responda até 10/09/2026 para nos ajudar a preparar tudo com muito carinho.</span>
+        </section>
+
+        <section class="rsvp-section" aria-labelledby="rsvp-title">
+            <div class="rsvp-card">
+                <div class="rsvp-card-header">
+                    <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                    <div>
+                        <p>RSVP</p>
+                        <h2 id="rsvp-title">Confirme sua presença</h2>
+                    </div>
+                </div>
+
+                <form class="rsvp-form" data-rsvp-form>
+                    <label>
+                        Nome completo
+                        <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    </label>
+
+                    <label>
+                        Telefone
+                        <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+                    </label>
+
+                    <fieldset>
+                        <legend>Você poderá comparecer?</legend>
+
+                        <label class="rsvp-option">
+                            <input type="radio" name="presenca" value="Sim, estarei presente" required>
+                            <span>Sim, estarei presente</span>
+                        </label>
+
+                        <label class="rsvp-option">
+                            <input type="radio" name="presenca" value="Não poderei comparecer">
+                            <span>Não poderei comparecer</span>
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        Quantidade de acompanhantes
+                        <select name="acompanhantes" required>
+                            <option value="">Selecione</option>
+                            <option value="0">Nenhum</option>
+                            <option value="1">1 acompanhante</option>
+                            <option value="2">2 acompanhantes</option>
+                            <option value="3">3 acompanhantes</option>
+                            <option value="4">4 acompanhantes</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Mensagem para os noivos
+                        <textarea name="mensagem" rows="4" placeholder="Escreva uma mensagem opcional"></textarea>
+                    </label>
+
+                    <button class="rsvp-button" type="submit">
+                        Enviar confirmação
+                    </button>
+
+                    <p class="rsvp-feedback" data-rsvp-feedback role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h2>Nosso Casamento</h2>
+        <p>Com amor, esperamos você nesse dia especial!</p>
+
+        <span class="footer-date">03/10/2026</span>
+
+        <a href="#" class="footer-credit">
+            Site criado por: Rafaella e Gabriel
+            <img src="img/partner_heart_24dp.png" alt="" class="footer-credit-icon">
+        </a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

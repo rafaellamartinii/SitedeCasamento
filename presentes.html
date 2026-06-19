@@ -30,7 +30,7 @@
 
     <nav class="page-nav">
         <a href="index.html">Início</a>
-        <a href="#">Confirmar Presença</a>
+        <a href="confirmar-presenca.html">Confirmar Presença</a>
         <a href="presentes.html">Lista de Presentes</a>
     </nav>
 
@@ -78,28 +78,28 @@
                     class="gift-button" target="_blank" rel="noopener noreferrer">Ver na Havan</a>
             </article>
 
-            <article class="gift-card">
-                <i class="fa-solid fa-wand-magic-sparkles gift-icon"></i>
-                <h3>Escova Modeladora</h3>
-                <p>Para facilitar os cuidados e a rotina de beleza em casa.</p>
-                <strong>Consulte o valor na loja</strong>
-                <a href="https://www.havan.com.br/beleza-e-perfumaria/cabelos/escovas-secadoras/"
-                    class="gift-button" target="_blank" rel="noopener noreferrer">Ver na Havan</a>
-            </article>
-
-            <article class="gift-card">
-                <i class="fa-solid fa-mug-hot gift-icon"></i>
-                <h3>Cafeteira</h3>
-                <p>Para começarmos nossos dias com café fresco e muito carinho.</p>
-                <strong>Consulte o valor na loja</strong>
-                <a href="https://www.havan.com.br/eletro/eletroportateis/cafeteiras-eletricas/"
-                    class="gift-button" target="_blank" rel="noopener noreferrer">Ver na Havan</a>
-            </article>
+    
+           
         </section>
 
-        <section class="pix-section">
+        <section class="pix-section" aria-labelledby="pix-title">
+            <div class="pix-icon" aria-hidden="true">
+                <i class="fa-brands fa-pix"></i>
+            </div>
+
+            <p class="pix-eyebrow">Presente via Pix</p>
+            <h2 id="pix-title">Prefere enviar um carinho direto?</h2>
             <p>Você também pode nos presentear usando a chave abaixo.</p>
-            <span>chavepix@exemplo.com</span>
+            <div class="pix-key-card" aria-label="Chave Pix">
+                <span class="pix-key-label">Chave Pix</span>
+                <strong id="pix-key">chavepix@exemplo.com</strong>
+                <button class="pix-copy-button" type="button" data-copy-target="pix-key">
+                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                    Copiar chave
+                </button>
+            </div>
+
+            <small>Depois do envio, se quiser, mande uma mensagem para comemorarmos juntos.</small>
         </section>
     </main>
 
@@ -114,6 +114,7 @@
             <img src="img/partner_heart_24dp.png" alt="" class="footer-credit-icon">
         </a>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
